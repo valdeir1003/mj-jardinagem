@@ -266,7 +266,17 @@ function fecharImagem(){
 document.getElementById("modal").style.display="none";
 }
 
+let botao = document.querySelector(".topo");
+
+window.onscroll = function(){
+if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+botao.style.display = "block";
+}else{
+botao.style.display = "none";
+}
+
 </script>
 
 </body>
+
 </html>

@@ -132,6 +132,18 @@ max-height:90%;
 border-radius:10px;
 }
 
+#topo{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#2e7d32;
+color:white;
+padding:12px;
+border-radius:50%;
+display:none;
+text-decoration:none;
+}
+
 </style>
 
 </head>
@@ -265,6 +277,11 @@ document.getElementById("imagemGrande").src=src;
 function fecharImagem(){
 document.getElementById("modal").style.display="none";
 }
+  </script>
+
+<a href="#" class="topo">⬆</a>
+
+<script>
 
 let botao = document.querySelector(".topo");
 
@@ -274,9 +291,9 @@ botao.style.display = "block";
 }else{
 botao.style.display = "none";
 }
+}
 
 </script>
-
 </body>
 
 </html>
